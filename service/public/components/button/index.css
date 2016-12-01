@@ -1,0 +1,14 @@
+/*
+* @Author: Marte
+* @Date:   2016-12-01 12:21:20
+* @Last Modified by:   Marte
+* @Last Modified time: 2016-12-01 12:34:51
+*/
+.zou-button{
+    background:#3DDBDD;
+    padding:4px;
+    border:solid 2px #ccc;
+    font-size:14px;
+    font-family: "微软雅黑";
+    /*font:14px/1.5 "微软雅黑";*/
+}
