@@ -1,0 +1,68 @@
+//尺寸：宽，高
+.size(@w:100%, @h:100%){
+    width:@w;
+    height:@h;
+}
+//字体颜色
+.color(@c){
+    color: @c;
+}
+//背景颜色
+.bgColor(@bc){
+    background-color: @bc;
+}
+//字体大小
+.fs(@fs){
+    font-size: @fs;
+}
+//字体(多属性)
+.font(@fs, @ff){
+    font: @fs @ff;
+}
+//边框
+.bor(@s, @w, @c){
+    border: @s @w @c;
+}
+//文本修饰线
+.td(@td){
+    text-decoration: @td;
+}
+//padding
+.pad1(@p1){
+    padding:@p1;
+}
+.pad2(@p1, @p2){
+    padding: @p1 @p2;
+}
+.pad3(@p1, @p2, @p3){
+    padding: @p1 @p2 @p3;
+}
+.pad4(@p1, @p2, @p3, @p4){
+    padding: @p1 @p2 @p3 @p4;
+}
+//margin
+.mar1(@m1){
+    margin:@m1;
+}
+.mar2(@m1, @m2){
+    margin: @m1 @m2;
+}
+.mar3(@m1, @m2, @m3){
+    margin: @m1 @m2 @m3;
+}
+.mar4(@m1, @m2, @m3, @m4){
+    margin: @m1 @m2 @m3 @m4;
+}
+//z-index
+.zIn(@z){
+    z-index: @z;
+}
+//display
+.dis(@d){
+    display:@d;
+}
+//position
+.pos(@left:0, @top:0){
+    left:@left;
+    top:@top;
+}

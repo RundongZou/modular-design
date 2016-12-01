@@ -1,9 +1,9 @@
-# 按钮组件
+# modal组件
 
 ## 组件描述
 
 ##组件应用
-1. 引用按钮组件库
+1. 引用蒙层(model)组件库
 2. 被使用的元素加上class = zou-button
 
 ##应用举例
@@ -20,19 +20,3 @@
 .zou-button           一般样式
 .zou-button-warn      警告样式
 .zou-button-cancel    取消样式
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,21 @@
+@import '../common.less';
+.zou-modal{
+  .size(100%, 100%);
+  .bgColor(rgba(0,0,0,.2));
+  position: fixed;
+  .pos(0, 0);
+  .zIn(1);
+  .dis(none);
+  &-content{
+    .bgColor(lightblue);
+    position: fixed;
+    .pos(50%, 50%);
+    .size(300px, 100px);
+  }
+}
+.show{
+  .dis(block);
+}
+.hide{
+  .dis(none);
+}
