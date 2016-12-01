@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="./../lib/seajs/sea.js"></script>
+    <script src="./../lib/seajs/seajs-text.js"></script>
+</head>
+<body>
+<a href="#" class="zou-button">test</a>
+<script>
+    seajs.config({
+        //设置路径，方便跨目录调用
+        paths:{
+            'cdn': 'http://cdn.bootcss.com',
+            'components': './../../components',
+            'page': './../page',
+            'lib': './../lib'
+        },
+        //设置别名，方便调用
+        alias:{
+            'jquery':'cdn/jquery/3.1.1/jquery.js',
+            'button':'components/button/index.js'
+        }
+    });
+</script>
+<script>
+    seajs.use('page/js/test');
+</script>
+</body>
+</html>
