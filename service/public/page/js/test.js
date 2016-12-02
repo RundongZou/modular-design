@@ -8,10 +8,10 @@
 define(function(require, exports, module){
     require('button');
     require('jquery');
-    var comModal = require('modal');
+    var componentModal = require('modal');
 
     $( function () {
-        var modal = comModal.init( {
+        var modal = componentModal.init( {
             elem : $('#con')
         } );
         $('.zou-button-warn').click(function () {

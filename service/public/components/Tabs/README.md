@@ -4,7 +4,7 @@
 
 ##组件应用
 1. 引用蒙层(model)组件库
-2. 被使用的元素加上class = zou-model
+2. 被使用的元素加上class = zou_tabs
 
 ##组件应用
 1.var CptModal = require('modal');
