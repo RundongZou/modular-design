@@ -1,25 +1,41 @@
-.zou-modal {
+.zou_tabs_wrap {
+  width: 500px;
+  height: 350px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid 2px #ff0000;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.zou_tabs_titles {
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  display: none;
-  line-height: 100%;
+  height: 40px;
+  background-color: #eaeaea;
 }
-.zou-modal-content {
-  background-color: #add8e6;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  width: 300px;
-  height: 100px;
-}
-.show {
+.zou_tabs_titles:after {
+  content: '';
+  clear: both;
   display: block;
 }
-.hide {
-  display: none;
+.zou_tabs_titles .tab_title {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 3px 4px;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 8px;
+  float: left;
+  background-color: #ffc0cb;
+  cursor: pointer;
+  height: 40px;
+}
+.zou_tabs_titles .tab_title:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+.hover {
+  background-color: #ff0000;
+  color: #ffffff;
 }
