@@ -1,12 +1,20 @@
+<!--
+    Author: Rundong Zou
+      Date: 2016-12-02
+-->
 <div class="zou_tabs_wrap">
     <div class="zou_tabs_titles">
-        {{#each tabs_title}}
-        <div class="tab_title">{{tabs_title[index]}}</div>
-        {{/each}}
+        {{#tabs_title}}
+        <div class="tab_title">
+            {{value}}
+        </div>
+        {{/tabs_title}}
     </div>
     <div class="zou_tabs_content">
-        {{#each tabs_content}}
-        <div class="tab_content">{{tabs_content[index]}}</div>
-        {{/each}}
+        {{#contents}}
+        <div class="tab_content">
+            {{value}}
+        </div>
+        {{/contents}}
     </div>
 </div>

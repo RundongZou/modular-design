@@ -14,7 +14,8 @@ define(function(require, exports, module){
 
     function modalInit(para){
         para = para || {};
-        var $elem = para.elem;
+        console.log(para);
+        var $elem = para;
         if($elem === undefined){
             throw 'no';
             return;

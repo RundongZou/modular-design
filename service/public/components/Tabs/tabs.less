@@ -1,22 +1,36 @@
-@import '../common.less';
-.zou-modal{
-  .size(100%, 100%);
-  .bgColor(rgba(0,0,0,.2));
-  position: fixed;
-  .pos(0, 0);
-  .zIn(1);
-  .dis(none);
-  .lineh(100%);
-  &-content{
-    .bgColor(lightblue);
-    position: fixed;
-    .pos(50%, 50%);
-    .size(300px, 100px);
+@import './../common.less';
+.zou_tabs_wrap{
+  .size(500px, 350px);
+  .bs(border-box);
+  .bor(solid, 2px, red);
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.zou_tabs_titles{
+  .size(100%, 40px);
+  .bgColor(#eaeaea);
+  &:after{
+    content: '';
+    clear:both;
+    .dis(block);
+  }
+  .tab_title{
+    .bs(border-box);
+    .pad2(3px, 4px);
+    .ta(center);
+    .lineh(40px);
+    margin-right: 8px;
+    float: left;
+    .bgColor(pink);
+    .cur(pointer);
+    height:40px;
+    &:hover{
+      .bgColor(rgba(255, 0, 0, 1));
+      .color(white);
+    }
   }
 }
-.show{
-  .dis(block);
-}
-.hide{
-  .dis(none);
+.hover{
+  .bgColor(rgba(255, 0, 0, 1));
+  .color(white);
 }
