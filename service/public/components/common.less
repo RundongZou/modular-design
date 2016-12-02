@@ -1,29 +1,33 @@
-//尺寸：宽，高
+//width, height
 .size(@w:100%, @h:100%){
     width:@w;
     height:@h;
 }
-//字体颜色
+//color
 .color(@c){
     color: @c;
 }
-//背景颜色
+//background-color
 .bgColor(@bc){
     background-color: @bc;
 }
-//字体大小
+//background
+.bg(@b){
+    background: @b;
+}
+//font-size
 .fs(@fs){
     font-size: @fs;
 }
-//字体(多属性)
+//font(multi-attribute)
 .font(@fs, @ff){
     font: @fs @ff;
 }
-//边框
+//border
 .bor(@s, @w, @c){
     border: @s @w @c;
 }
-//文本修饰线
+//text-decoration
 .td(@td){
     text-decoration: @td;
 }
@@ -59,10 +63,31 @@
 }
 //display
 .dis(@d){
-    display:@d;
+    display: @d;
 }
 //position
+.position(@p){
+    position: @p;
+}
 .pos(@left:0, @top:0){
-    left:@left;
-    top:@top;
+    left: @left;
+    top: @top;
+}
+//text-align
+.ta(@t){
+    text-align: @t;
+}
+//box-sizing
+.bs(@b){
+    -webkit-box-sizing: @b;
+    -moz-box-sizing: @b;
+    box-sizing: @b;
+}
+//cursor
+.cur(@c:auto){
+    cursor: @c;
+}
+//line-height
+.lineh(@h){
+    line-height: @h;
 }

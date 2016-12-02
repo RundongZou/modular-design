@@ -8,9 +8,12 @@
     <script src="http://localhost:3000/lib/seajs/seajs-text.js"></script>
 </head>
 <body>
-<a href="#" class="zou-button zou-button-normal">normal</a>
-<a href="#" class="zou-button zou-button-warn">warn</a>
-<a href="#" class="zou-button zou-button-cancel">cancel</a>
+<div>
+    <a href="#" class="zou-button zou-button-normal">normal</a>
+    <a href="#" class="zou-button zou-button-warn">warn</a>
+    <a href="#" class="zou-button zou-button-cancel">cancel</a>
+</div>
+
 
 <div id="con" class="page-modalone">
     <h1>邹润东</h1>
@@ -21,21 +24,23 @@
     seajs.config({
         //设置路径，方便跨目录调用
         paths:{
-            'cdn': 'http://cdn.bootcss.com',
+                   'cdn': 'http://cdn.bootcss.com',
             'components': 'http://localhost:3000/components',
-            'page': 'http://localhost:3000/page',
-            'lib': 'http://localhost:3000/lib'
+                  'page': 'http://localhost:3000/page',
+                   'lib': 'http://localhost:3000/lib'
         },
         //设置别名，方便调用
         alias:{
-            'jquery': 'cdn/jquery/3.1.1/jquery.js',
-            'button': 'components/button/index.js',
-            'modal': 'components/modal/index.js'
+                'jquery': 'cdn/jquery/3.1.1/jquery.js',
+                'button': 'components/button/button.js',
+                 'modal': 'components/modal/modal.js',
+                  'tabs': 'components/tabs/tabs.js',
+            'handlebars': 'lib/handlebars.min.js'
         }
     });
 </script>
 <script>
-    seajs.use('page/js/test');
+    seajs.use('page/js/test.js');
 </script>
 </body>
 </html>
